@@ -4,7 +4,8 @@
         flex-direction: column;
     }
 
-    .profile {
+    header .profile {
+        margin-left: -6rem;
     }
 
     header h1 {
@@ -16,13 +17,27 @@
     #navMenu {
         display: none;
         position: absolute;
-        left: 0;
-        top: 3.5rem;
-        width: 100%;  /* Full width for mobile */
-        background-color: var(--nav-background-color); /* Use your existing color variables */
-        padding: 1rem;
-        border-radius: 5px;
-        z-index: 100;  /* Ensure the nav menu appears above other elements */
+        right: 1rem;
+        top: 1rem;
+    }
+
+    #navMenu ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    #navMenu a {
+        font-size: 12px;
+        color: black;
+        
+    }
+
+    #navMenu a:hover {
+        color: #fff;
+        background-color: red;
+        padding: 5px;
+        font-size: 13px;
     }
 
     /* Show the nav menu when the 'show' class is added */
@@ -30,16 +45,11 @@
         display: block;
     }
 
-    /* Hamburger Button Styles */
-    #hamburger {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2.5rem;
-        cursor: pointer;
+    #menuToggle {
+        display: block;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        transform: translate(19rem, 1rem);
+        background-color: #fff;
     }
     
     .course-filter {
