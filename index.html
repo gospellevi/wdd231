@@ -3,26 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document for Gospel Levi</title>
-    <style>
-        h1 {
-            color: red;
-            /* background-color: blue; */
-            text-align: center;
-        }
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDD 231 - Course Home Page- Gospel Levi</title>
+    <meta name="description" content="WDD231: The course home page for my Chamber of Commerce website.">
+    <meta name="author" content="Gospel Levi">
+    <link rel="stylesheet" href="styles/index.css">
+    <!-- <link rel="stylesheet" href="styles/index-large.css"> -->
+    <link rel="stylesheet" href="styles/index-small.css">
+    <script src="scripts/index.js" defer></script>
+    <!-- <script src="scripts/courses.js" defer></script> -->
 
-        footer {
-            color: blue;
-            /* background-color: red; */
-            text-align: center;
-            padding: auto;
-            margin: auto;
-        }
-    </style>
+
 </head>
-<body>
-    <h1>Gospel Levi</h1>
 
-    <footer>wdd231</footer>
+<body>
+    <header>
+        <div class="profile">
+            <img src="images/Levi.webp" alt="gospel-levi" >
+            <h1>Gospel C. Levi</h1>
+        </div>
+
+        <!-- <button id="hamburger">&#9776;</button> -->
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                <li><a href="chamber.html" rel="noopener noreferrer">Chamber</a></li>
+                <li><a href="https://gospellevi.github.io/wdd231/" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/gospel-levi" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="course-info">
+            <h3>Course Work</h3>
+            <p>ο</p>
+            <p>ο</p>
+            <p>ο</p>
+        </section>
+
+        <section class="location">
+            <h3>Magboro, Nigeria</h3>
+            <figure>
+                <img src="images/eyo-statue-flanked-with.jpg" alt="placeholder">      
+                <figcaption>Johnson Jakande Tinubu</figcaption>
+            </figure>
+        </section>
+
+        <section class="certificates">
+            <h3>Web and Computer Programming Certificate</h3>
+            <div class="course-filter">
+                <p>All</p>
+                <p>CSE</p>
+                <p>WDD</p>
+            </div>
+
+            <div class="course-list">
+                <p>CSE 110</p>
+                <p>WDD 130</p>
+                <p>CSE 111</p>
+                <p>CSE 210</p>
+                <p>WDD 131</p>
+                <p>WDD 231</p>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer><p>&copy; <span id="currentyear"></span> 🌍 Gospel Chiedozie Levi 🌍 Nigeria</p>
+            <p id="lastmodified"></p>
+    </footer>
 </body>
 </html>

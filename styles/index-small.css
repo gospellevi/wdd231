@@ -1,0 +1,54 @@
+@media screen and (max-width: 600px)  and (min-width: 300px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile {
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation Menu */
+    /* Hide the nav menu by default */
+    #navMenu {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 3.5rem;
+        width: 100%;  /* Full width for mobile */
+        background-color: var(--nav-background-color); /* Use your existing color variables */
+        padding: 1rem;
+        border-radius: 5px;
+        z-index: 100;  /* Ensure the nav menu appears above other elements */
+    }
+
+    /* Show the nav menu when the 'show' class is added */
+    #navMenu.show {
+        display: block;
+    }
+
+    /* Hamburger Button Styles */
+    #hamburger {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2.5rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .course-filter {
+        gap: 10px;
+    }
+
+    .course-list {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
