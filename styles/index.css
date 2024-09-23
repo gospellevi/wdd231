@@ -90,7 +90,6 @@ section {
 .course-info {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    /* height: 50vh; */
 }
 
 .course-info p {
@@ -144,20 +143,30 @@ section h3 {
 }
 
 .course-list {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;   
     gap: 20px;
-    padding: 10px;
+    padding: 10px; */
     border-top: #c9c7c7 2px solid;
 }
 
-.course-list p {
+/* .course-list p {
     margin: 0;
     padding: 10px;
     border-radius: 5px;
     background-color: var(--accent1-color);
     color: black;
+} */
+
+#total-credits {
+    text-align: center;
+    font: 1.2em sans-serif;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--nav-link-color);
+    color: #fff;
+    border-radius: 5px;
 }
 
 footer {
@@ -166,3 +175,34 @@ footer {
     background-color: var(--nav-link-color);
     color: #fff;
 }
+
+.course-card {
+    /* padding: 20px; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card h3 {
+    /* text-align: center; */
+    margin-bottom: 10px;
+    background: none;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+}
+
