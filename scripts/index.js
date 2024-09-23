@@ -102,27 +102,43 @@ document.addEventListener('DOMContentLoaded', () => {
             courseCard.classList.add('course-card');
             courseCard.style.backgroundColor = course.completed ? 'rgb(158, 5, 5)' : 'var(--secondary-color)';
 
-
+            // Initial course card content (title only)
             courseCard.innerHTML = `<h3>${course.subject} ${course.number}</h3>`;
+
+            // -------------------------------------------------------------
+            // Create a div for the additional details (hidden initially)
+            const details = document.createElement('div');
+            details.classList.add('course-details');
+            details.style.display = 'none'; // Hidden initially
+
+            // Add course details to the div
+            details.innerHTML = `
+                <h4>${course.title}</h4>
+                <p><strong>Credits:</strong> ${course.credits}</p>
+                <p><strong>Description:</strong> ${course.description}</p>
+                <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+                <p><strong>Status:</strong> ${course.completed ? 'Completed' : 'In Progress'}</p>
+            `;
+
+            // Append the details to the card
+            courseCard.appendChild(details);
+
+            // Add event listener to toggle visibility of details
+            courseCard.addEventListener('click', () => {
+                // Hide all other open course details
+                document.querySelectorAll('.course-details').forEach(detail => {
+                    if (detail !== details) {
+                        detail.style.display = 'none';
+                    }
+                });
+                // Toggle the clicked course's details
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+            });
+            // ----------------------------------------------------------------
+
             courseList.appendChild(courseCard);
         });
 
-
-        // Create course cards dynamically || If I want to show more card descriptions ☝🏿
-        // filteredCourses.forEach(course => {
-        //     const courseCard = document.createElement('div');
-        //     courseCard.classList.add('course-card');
-        //     courseCard.style.backgroundColor = course.completed ? 'var(--accent1-color)' : 'var(--secondary-color)'; // Styling completed courses
-
-        //     courseCard.innerHTML = `
-        //         <h3>${course.subject} ${course.number}: ${course.title}</h3>
-        //         <p><strong>Credits:</strong> ${course.credits}</p>
-        //         <p><strong>Description:</strong> ${course.description}</p>
-        //         <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
-        //         <p><strong>Status:</strong> ${course.completed ? 'Completed' : 'In Progress'}</p>
-        //     `;
-        //     courseList.appendChild(courseCard);
-        // });
 
         // Calculate total credits dynamically
         const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
