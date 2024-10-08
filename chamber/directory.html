@@ -24,84 +24,67 @@
 </head>
 
 <body>
-    <header>
+    
+    <div class="container">
+
+        <header>
         
-        <div class="profile">
-            <img src="images/ikeja-nigeria-flag.png" alt="site logo">
-            <div class="title">
-                <h1>Ikeja</h1>
-                <h4>Chamber of Commerce</h4>
+            <div class="profile">
+                <img src="images/ikeja-nigeria-flag.png" alt="site logo">
+                <div class="title">
+                    <h1>Ikeja</h1>
+                    <h4>Chamber of Commerce</h4>
+                </div>
             </div>
-        </div>
-
-        <!-- <button id="hamburger">&#9776;</button> -->
-        <nav id="navMenu">
-            <button id="hamburger">&#9776;</button>
-            <ul class="menulinks">
-                <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-                <li class="active"><a href="directory.html" rel="noopener noreferrer">Directory</a></li>
-                <li><a href="join.html" target="_blank" rel="noopener noreferrer">Join</a></li>
-                <li><a href="discover.html" target="_blank" rel="noopener noreferrer">Discover</a></li>
-            </ul>
-        </nav>
-        <img src="images/nigeria-circle-flag.png" alt="ikeja flag" width="20" height="20">
-    </header>
-
-    <main>
-        <section class="course-info">
-            <h3>Course Work</h3>
-            <p>●</p>
-            <p>●</p>
-            <p>●</p>
-        </section>
-
-        <section class="location">
-            <h3>Ikeja, Nigeria</h3>
-            <figure>
-                <img src="images/eyo-statue-flanked-with.jpg" alt="JJT Park Statue">      
-                <figcaption>Johnson Jakande Tinubu</figcaption>
-            </figure>
-        </section>
-
-        <section class="certificates">
-            <div class="course-filter">
-                <p id="filter-all">All</p>
-                <p id="filter-cse">CSE</p>
-                <p id="filter-wdd">WDD</p>
+    
+            <!-- <button id="hamburger">&#9776;</button> -->
+            <nav id="navMenu">
+                <ul class="menulinks">
+                    <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li class="active"><a href="directory.html" rel="noopener noreferrer">Directory</a></li>
+                    <li><a href="join.html" target="_blank" rel="noopener noreferrer">Join</a></li>
+                    <li><a href="discover.html" target="_blank" rel="noopener noreferrer">Discover</a></li>
+                </ul>
+            </nav>
+            <img src="images/nigeria-circle-flag.png" alt="ikeja flag" width="20" height="20">
+        </header>
+    
+        <main>
+            <section class="directory">
+                <div class="directory-controls">
+                    <button type="button" id="toggleViewBtn" aria-pressed="false">Toggle View</button>
+                </div>
+                <div class="directory-list" id="directory-list">
+                    <!-- Member cards will be dynamically inserted here -->
+                </div>
+            </section>
+        </main>
+            
+        <footer>
+            <div>
+                <h4>Ikeja Chamber of Commerce</h4>
+                <p>6 Adeniji Street, Oregun</p>
+                <p>Ikeja, Nigeria 100212</p>
+                <p>info@ikejacoc.org</p>
+                <p>+234 803 123 4567</p>
+            </div>
+    
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com"></a>
+                <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com"></a>
+                <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com"></a>
+            </div>
+    
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Gospel Levi</p>
+                <p>&copy; <span id="currentyear"></span> 🌍 Ikeja Chamber of Commerce 🌍</p>
+                <p id="lastmodified"></p>
             </div>
             
-            <div class="course-list" id="course-list">
-                <!-- Courses will be dynamically added here -->
-            </div>
-            
-            <p id="total-credits">Total Credits: </p>
-        </section>
+        </footer>
 
-        
-        
-    </main>
-    <footer>
-        <div>
-            <h4>Ikeja Chamber of Commerce</h4>
-            <p>6 Adeniji Street, Oregun</p>
-            <p>Ikeja, Nigeria 100212</p>
-            <p>info@ikejacoc.org</p>
-            <p>+234 803 123 4567</p>
-        </div>
+    </div>
 
-        <div class="social-media">
-            <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com"></a>
-            <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com"></a>
-            <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com"></a>
-        </div>
-
-        <div>
-            <p>WDD231 Class Project</p>
-            <p>Gospel Levi</p>
-            <p>&copy; <span id="currentyear"></span> 🌍 Ikeja Chamber of Commerce 🌍</p>
-            <p id="lastmodified"></p>
-        </div>
-        
-    </footer>
 </body>
 </html>

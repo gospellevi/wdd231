@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Ikeja Tech Solutions",
+      "address": "1 Tech Park, Lekki-Epe Expressway, Ikeja, Lagos",
+      "phone": "+234 800 123 4567",
+      "website": "https://www.ikejatechsolutions.com",
+      "icon": "ikeja-tech-icon.png",
+      "membershipLevel": 3,
+      "description": "Leading provider of innovative tech solutions in Ikeja."
+    },
+    {
+      "name": "Lagos Food Market",
+      "address": "23 Food Plaza, Obafemi Awolowo Way, Ikeja, Lagos",
+      "phone": "+234 800 234 5678",
+      "website": "https://www.lagosfoodmarket.com",
+      "icon": "lagos-food-icon.png",
+      "membershipLevel": 2,
+      "description": "A hub for diverse culinary delights and local produce."
+    },
+    {
+      "name": "Green Energy Ikeja",
+      "address": "45 Renewable Drive, Ketu Ibadan Road, Ikeja, Lagos",
+      "phone": "+234 800 345 6789",
+      "website": "https://www.greenenergyikeja.com",
+      "icon": "green-energy-icon.png",
+      "membershipLevel": 1,
+      "description": "Promoting sustainable energy solutions across Ikeja."
+    },
+    {
+      "name": "Ikeja Finance Hub",
+      "address": "78 Finance Street, Festac Town, Ikeja, Lagos",
+      "phone": "+234 800 456 7890",
+      "website": "https://www.ikejafinancehub.com",
+      "icon": "ikeja-finance-icon.png",
+      "membershipLevel": 3,
+      "description": "Your trusted partner for financial planning and investment."
+    },
+    {
+      "name": "Lagos Health Center",
+      "address": "12 Wellness Avenue, GRA Ikeja, Lagos",
+      "phone": "+234 800 567 8901",
+      "website": "https://www.lagoshealthcenter.com",
+      "icon": "lagos-health-icon.png",
+      "membershipLevel": 1,
+      "description": "Providing top-notch healthcare services to the Ikeja community."
+    },
+    {
+      "name": "Ikeja Legal Associates",
+      "address": "34 Law Chambers, Anthony Village, Ikeja, Lagos",
+      "phone": "+234 800 678 9012",
+      "website": "https://www.ikejalegalassociates.com",
+      "icon": "ikeja-legal-icon.png",
+      "membershipLevel": 2,
+      "description": "Expert legal services specializing in corporate law."
+    },
+    {
+      "name": "Ikeja Creative Studios",
+      "address": "56 Artistry Road, Maryland, Ikeja, Lagos",
+      "phone": "+234 800 789 0123",
+      "website": "https://www.ikejacreativestudios.com",
+      "icon": "ikeja-creative-icon.png",
+      "membershipLevel": 3,
+      "description": "Innovative solutions in design, media, and creative arts."
+    }
+  ]
+  
