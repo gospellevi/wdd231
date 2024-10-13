@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WDD 231 - Chamber of Commerce Directory Page- Gospel Levi</title>
-    <meta name="description" content="WDD231: The directory page for my Chamber of Commerce website for business and technology in Ikeja, Nigeria.">
+    <title>WDD 231 - Chamber of Commerce Home Page - Gospel Levi</title>
+    <meta name="description" content="WDD231: The home page for my Chamber of Commerce website for business and technology in Ikeja, Nigeria.">
     <meta name="author" content="Gospel Levi">
     <!-- Open Graph Meta Properties -->
-    <meta property="og:title" content="Eko Chamber of Commerce Directory | City of Ikeja, Nigeria">
+    <meta property="og:title" content="Eko Chamber of Commerce Home | City of Ikeja, Nigeria">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://gospellevi.github.io/wdd231/chamber/images/Ikeja-CV.jpg" alt="Ikeja CV"> <!-- Replace with the actual image URL -->
-    <meta property="og:url" content="https://gospellevi.github.io/wdd231/chamber/directory.html"> <!-- Replace with your page URL -->
+    <meta property="og:url" content="https://gospellevi.github.io/wdd231/chamber/index.html"> <!-- Replace with your page URL -->
     <meta property="og:description" content="Welcome to the Eko Chamber of Commerce. We help grow and sustain local businesses in Ikeja, NG.">
     <meta property="og:site_name" content="Eko Chamber of Commerce">
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/directory.css">
-    <link rel="stylesheet" href="styles/directory-small.css">
-    <!-- Linking Normalize.css in HTML -->
-    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <!-- <link rel="stylesheet" href="styles/directory.css"> -->
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
-
 <body>
-
     <div class="container">
-
         <header>
-        
             <div class="profile">
                 <img src="images/ikeja-nigeria-flag.png" alt="site logo" loading="lazy">
                 <div class="title">
@@ -37,30 +33,61 @@
                     <h4>Chamber of Commerce</h4>
                 </div>
             </div>
-    
-            <!-- <button id="hamburger">&#9776;</button> -->
             <nav id="navMenu">
                 <ul class="menulinks">
-                    <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
-                    <li class="active"><a href="directory.html" rel="noopener noreferrer">Directory</a></li>
+                    <li class="active"><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="directory.html" rel="noopener noreferrer">Directory</a></li>
                     <li><a href="join.html" target="_blank" rel="noopener noreferrer">Join</a></li>
                     <li><a href="discover.html" target="_blank" rel="noopener noreferrer">Discover</a></li>
                 </ul>
             </nav>
             <img src="images/nigeria-circle-flag.png" alt="ikeja flag" width="20" height="20" loading="lazy">
         </header>
-    
         <main>
-            <section class="directory">
-                <div class="directory-controls">
-                    <button type="button" id="toggleViewBtn" aria-pressed="false">Toggle View</button>
-                </div>
-                <div class="directory-list" id="directory-list">
-                    <!-- Member cards will be dynamically inserted here -->
+            <section class="hero">
+                <img src="images/hero_image.webp" alt="Hero Image" class="hero-image">
+                <div class="hero-text">
+                    <!-- <h2>Welcome to the Ikeja Chamber of Commerce</h2> -->
+                    <!-- <p>Supporting local businesses and fostering economic growth in Ikeja.</p> -->
+                    <a href="join.html" class="cta-button">Join Us Today</a>
                 </div>
             </section>
-        </main>
+
+            <h2>Home</h2>
             
+            <div class="home-details">
+
+                <section class="current-events">
+                    <h3>Events</h3>
+                    <div class="events-list">
+                        <p>Placeholder for current events content.</p>
+                    </div>
+                </section>
+
+                <section class="weather">
+                    <h3>Current Weather</h3>
+                    <div id="weather-info">
+                        <p>Loading weather data...</p>
+                    </div>
+                </section>
+
+                <section class="forecast">
+                    <h3>Weather Forecast</h3>
+                    <div id="weather-forecast">
+                        <p>Loading weather forecast data...</p>
+                    </div>
+                </section>
+
+                <section class="company-spotlights">
+                    <h3>Company Spotlights</h3>
+                    <div id="spotlights">
+                        <!-- Company spotlights will be dynamically inserted here -->
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
         <footer>
             <div>
                 <h4>Ikeja Chamber of Commerce</h4>
@@ -69,23 +96,19 @@
                 <p>info@ikejacoc.org</p>
                 <p>+234 803 123 4567</p>
             </div>
-    
             <div class="social-media">
                 <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com" loading="lazy"></a>
                 <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com" loading="lazy"></a>
                 <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com" loading="lazy"></a>
             </div>
-    
             <div>
                 <p>WDD231 Class Project</p>
                 <p>Gospel Levi</p>
-                <p>&copy; <span id="currentyear"></span> 🌍 Ikeja Chamber of Commerce 🌍</p>
+                <p>© <span id="currentyear"></span> 🌍 Ikeja Chamber of Commerce 🌍</p>
                 <p id="lastmodified"></p>
             </div>
-            
         </footer>
-
     </div>
-
+    
 </body>
 </html>

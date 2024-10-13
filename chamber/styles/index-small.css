@@ -95,6 +95,28 @@
         align-items: center;
     }
 
+/* ------------------------------home page------------------------------- */
+
+    .hero-text {
+        transform: translate(1rem, 1rem);
+    }
+
+    .home-details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 20px;
+    }
+
+    #spotlights{
+        /* display: flex;
+        flex-wrap: wrap; */
+        /* gap: 20px; */
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
     /* -------------------footer styling------------------ */
 
     footer {
