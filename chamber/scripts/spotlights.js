@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         spotlightsContainer.innerHTML = selectedMembers.map(member => `
             <div class="spotlight">
-                <img src="images/${member.icon}" alt="${member.name} Logo" class="spotlight-icon" width="80" height="auto" loading="lazy">
+                <img src="images/${member.icon}" alt="${member.name} Logo" class="spotlight-icon" width="80" height="60vh" loading="lazy">
                 <div class="spotlight-details">
                     <h3>${member.name}</h3>
                     <p>${member.description}</p>

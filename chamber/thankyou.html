@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDD 231 - Chamber of Commerce Directory Page- Gospel Levi</title>
+    <meta name="description" content="WDD231: The directory page for my Chamber of Commerce website for business and technology in Ikeja, Nigeria.">
+    <meta name="author" content="Gospel Levi">
+    <!-- Open Graph Meta Properties -->
+    <meta property="og:title" content="Eko Chamber of Commerce Directory | City of Ikeja, Nigeria">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gospellevi.github.io/wdd231/chamber/images/Ikeja-CV.jpg" alt="Ikeja CV"> <!-- Replace with the actual image URL -->
+    <meta property="og:url" content="https://gospellevi.github.io/wdd231/chamber/directory.html"> <!-- Replace with your page URL -->
+    <meta property="og:description" content="Welcome to the Eko Chamber of Commerce. We help grow and sustain local businesses in Ikeja, NG.">
+    <meta property="og:site_name" content="Eko Chamber of Commerce">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <!-- Linking Normalize.css in HTML -->
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet">
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header>
+        
+        <div class="profile">
+            <img src="images/ikeja-nigeria-flag.png" alt="site logo" loading="lazy">
+            <div class="title">
+                <h1>Ikeja</h1>
+                <h4>Chamber of Commerce</h4>
+            </div>
+        </div>
+
+        <!-- <button id="hamburger">&#9776;</button> -->
+        <nav id="navMenu">
+            <ul class="menulinks">
+                <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                <li class="active"><a href="directory.html" rel="noopener noreferrer">Directory</a></li>
+                <li><a href="join.html" target="_blank" rel="noopener noreferrer">Join</a></li>
+                <li><a href="discover.html" target="_blank" rel="noopener noreferrer">Discover</a></li>
+            </ul>
+        </nav>
+        <img src="images/nigeria-circle-flag.png" alt="ikeja flag" width="20" height="20" loading="lazy">
+    </header>
+
+    <!-- Thank You Section -->
+    <main>
+        <section class="thank-you-message">
+            <h2>Thank You for Joining!</h2>
+            <p>Your application has been received. Here’s what you submitted:</p>
+
+            <div class="confirmation-details">
+                <p>First Name: <span id="first-name-display"></span></p>
+                <p>Last Name: <span id="last-name-display"></span></p>
+                <p>Email: <span id="email-display"></span></p>
+                <p>Mobile Number: <span id="phone-display"></span></p>
+                <p>Business/Organization: <span id="business-name-display"></span></p>
+                <p>Submitted on: <span id="timestamp-display"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h4>Ikeja Chamber of Commerce</h4>
+            <p>6 Adeniji Street, Oregun</p>
+            <p>Ikeja, Nigeria 100212</p>
+            <p>info@ikejacoc.org</p>
+            <p>+234 803 123 4567</p>
+        </div>
+
+        <div class="social-media">
+            <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com" loading="lazy"></a>
+            <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com" loading="lazy"></a>
+            <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com" loading="lazy"></a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Gospel Levi</p>
+            <p>&copy; <span id="currentyear"></span> 🌍 Ikeja Chamber of Commerce 🌍</p>
+            <p id="lastmodified"></p>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

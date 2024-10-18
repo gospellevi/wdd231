@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDD 231 - Chamber of Commerce Join Page - Gospel Levi</title>
+    <meta name="description" content="WDD231: The Join page for my Chamber of Commerce website for business and technology in Ikeja, Nigeria.">
+    <meta name="author" content="Gospel Levi">
+    <!-- Open Graph Meta Properties -->
+    <meta property="og:title" content="Eko Chamber of Commerce Home | City of Ikeja, Nigeria">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gospellevi.github.io/wdd231/chamber/images/Ikeja-CV.jpg" alt="Ikeja CV"> <!-- Replace with the actual image URL -->
+    <meta property="og:url" content="https://gospellevi.github.io/wdd231/chamber/index.html"> <!-- Replace with your page URL -->
+    <meta property="og:description" content="Welcome to the Eko Chamber of Commerce. We help grow and sustain local businesses in Ikeja, NG.">
+    <meta property="og:site_name" content="Eko Chamber of Commerce">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <!-- <link rel="stylesheet" href="styles/directory.css"> -->
+    <script src="scripts/chamber.js" defer></script>
+    <!-- <script src="scripts/weather.js" defer></script> -->
+    <!-- <script src="scripts/spotlights.js" defer></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="profile">
+                <img src="images/ikeja-nigeria-flag.png" alt="site logo" loading="lazy">
+                <div class="title">
+                    <h1>Ikeja</h1>
+                    <h4>Chamber of Commerce</h4>
+                </div>
+            </div>
+            <nav id="navMenu">
+                <ul class="menulinks">
+                    <li class="active"><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="directory.html" rel="noopener noreferrer">Directory</a></li>
+                    <li><a href="join.html" target="_blank" rel="noopener noreferrer">Join</a></li>
+                    <li><a href="discover.html" target="_blank" rel="noopener noreferrer">Discover</a></li>
+                </ul>
+            </nav>
+            <img src="images/nigeria-circle-flag.png" alt="ikeja flag" width="20" height="20" loading="lazy">
+        </header>
+
+        <main>
+
+            <section class="join-form-container">
+                <form method="get" action="thankyou.html" class="join-form">
+                    <h2>Join Our Chamber</h2>
+    
+                    <!-- Applicant's First Name -->
+                    <label for="first-name" title="Enter your first name">
+                        First Name:
+                        <input type="text" id="first-name" name="first-name" required autocomplete="given-name" title="Your First Name">
+                    </label>
+    
+                    <!-- Applicant's Last Name -->
+                    <label for="last-name" title="Enter your last name">
+                        Last Name:
+                        <input type="text" id="last-name" name="last-name" required autocomplete="family-name" title="Your Last Name">
+                    </label>
+    
+                    <!-- Organization Title -->
+                    <label for="org-title" title="Enter your title in the organization">
+                        Organizational Title:
+                        <input type="text" id="org-title" name="org-title" autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" title="Title should only contain letters, hyphens, and spaces, with at least 7 characters.">
+                    </label>
+    
+                    <!-- Email Address -->
+                    <label for="email" title="Enter your email address">
+                        Email:
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Your Email Address">
+                    </label>
+    
+                    <!-- Mobile Phone Number -->
+                    <label for="phone" title="Enter your mobile phone number">
+                        Mobile Number:
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Your Mobile Number">
+                    </label>
+    
+                    <!-- Business/Organization Name -->
+                    <label for="business-name" title="Enter your business/organization's name">
+                        Business/Organization Name:
+                        <input type="text" id="business-name" name="business-name" required autocomplete="organization" title="Your Business/Organization Name">
+                    </label>
+    
+                    <!-- Membership Level -->
+                    <label for="membership-level" title="Select your desired membership level">
+                        Membership Level:
+                        <select id="membership-level" name="membership-level" title="Choose a membership level">
+                            <option value="NP">NP Membership (Non-Profit)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+    
+                    <!-- Business Description -->
+                    <label for="description" title="Describe your business/organization">
+                        Business Description:
+                        <textarea id="description" name="description" title="Describe your organization" rows="4"></textarea>
+                    </label>
+    
+                    <!-- Timestamp (Hidden) -->
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+    
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit Application">
+    
+                </form>
+    
+                <!-- Membership Cards -->
+                <aside class="membership-cards">
+                    <div class="card" id="np-card">
+                        <h3>NP Membership</h3>
+                        <a href="#np-modal" class="open-modal">Learn More</a>
+                    </div>
+                    <div class="card" id="bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <a href="#bronze-modal" class="open-modal">Learn More</a>
+                    </div>
+                    <div class="card" id="silver-card">
+                        <h3>Silver Membership</h3>
+                        <a href="#silver-modal" class="open-modal">Learn More</a>
+                    </div>
+                    <div class="card" id="gold-card">
+                        <h3>Gold Membership</h3>
+                        <a href="#gold-modal" class="open-modal">Learn More</a>
+                    </div>
+                </aside>
+            </section>
+    
+            <!-- Membership Modals -->
+            <div class="membership-modal">
+                <div class="modal" id="np-modal">
+                    <div class="modal-content">
+                        <h2>NP Membership Benefits</h2>
+                        <p>No fees for non-profits. Access to networking events and community resources.</p>
+                        <button class="close-modal">Close</button>
+                    </div>
+                </div>
+                <div class="modal" id="bronze-modal">
+                    <div class="modal-content">
+                        <h2>Bronze Membership Benefits</h2>
+                        <p>Discounted event tickets, advertising options, and training programs.</p>
+                        <button class="close-modal">Close</button>
+                    </div>
+                </div>
+                <div class="modal" id="silver-modal">
+                    <div class="modal-content">
+                        <h2>Silver Membership Benefits</h2>
+                        <p>All Bronze benefits plus more extensive advertising and exclusive workshops.</p>
+                        <button class="close-modal">Close</button>
+                    </div>
+                </div>
+                <div class="modal" id="gold-modal">
+                    <div class="modal-content">
+                        <h2>Gold Membership Benefits</h2>
+                        <p>Premium advertising slots, major discounts, and event sponsorship opportunities.</p>
+                        <button class="close-modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div>
+                <h4>Ikeja Chamber of Commerce</h4>
+                <p>6 Adeniji Street, Oregun</p>
+                <p>Ikeja, Nigeria 100212</p>
+                <p>info@ikejacoc.org</p>
+                <p>+234 803 123 4567</p>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com" loading="lazy"></a>
+                <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com" loading="lazy"></a>
+                <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com" loading="lazy"></a>
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Gospel Levi</p>
+                <p>© <span id="currentyear"></span> 🌍 Ikeja Chamber of Commerce 🌍</p>
+                <p id="lastmodified"></p>
+            </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
