@@ -2,8 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const timestampField = document.getElementById("timestamp");
     if (timestampField) {
-        const now = new Date();
-        timestampField.value = now.toISOString(); // Store timestamp in ISO format for easier parsing
+        timestampField.value = new Date().toLocaleString();
     }
 
     // Modal functionality
@@ -13,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
     openModalLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
-            const targetModal = document.querySelector(link.getAttribute('href'));
+            const targetModalId = link.getAttribute('href').substring(1); // Remove the '#' symbol
+            const targetModal = document.getElementById(targetModalId);
             if (targetModal) {
-                targetModal.style.display = 'flex';
+                targetModal.style.display = 'block';
             }
         });
     });
@@ -40,15 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Thank You page data population
-    // if (window.location.pathname.includes("thankyou.html")) {
-    //     const urlParams = new URLSearchParams(window.location.search);
+    if (window.location.pathname.includes("thankyou.html")) {
+        const urlParams = new URLSearchParams(window.location.search);
 
         // Fill in the confirmation details
-        // document.getElementById("first-name-display").textContent = urlParams.get("first-name");
-        // document.getElementById("last-name-display").textContent = urlParams.get("last-name");
-        // document.getElementById("email-display").textContent = urlParams.get("email");
-        // document.getElementById("phone-display").textContent = urlParams.get("phone");
-        // document.getElementById("business-name-display").textContent = urlParams.get("business-name");
-        // document.getElementById("timestamp-display").textContent = urlParams.get("timestamp");
-    // }
+        document.getElementById("first-name-display").textContent = urlParams.get("first-name");
+        document.getElementById("last-name-display").textContent = urlParams.get("last-name");
+        document.getElementById("email-display").textContent = urlParams.get("email");
+        document.getElementById("phone-display").textContent = urlParams.get("phone");
+        document.getElementById("business-name-display").textContent = urlParams.get("business-name");
+        document.getElementById("timestamp-display").textContent = urlParams.get("timestamp");
+    }
 });

@@ -193,6 +193,9 @@ li.active a:hover {
 
 .card a {
     color: var(--accent2-color);
+    /* color: #fff; */
+    background-color: #000;
+    padding: 10px;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
@@ -216,7 +219,8 @@ li.active a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--secondary-color);
+    background-color: var(--nav-link-color);
+    color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -243,9 +247,10 @@ li.active a:hover {
 }
 
 .modal-content .close-modal:hover {
-    background-color: var(--nav-hover-background-color);
-    color: var(--nav-link-color);
+    background-color: #fff;
+    color: #00539C;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* Initially hide the modal */
