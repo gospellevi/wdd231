@@ -131,6 +131,7 @@ li.active a:hover {
 }
 
 
+
 .join-form {
     display: flex;
     flex-direction: column;
@@ -251,6 +252,12 @@ li.active a:hover {
     color: #00539C;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+/* Backdrop styling */
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.1); /* Dark backdrop */
+    /* backdrop-filter: blur(5px); Apply blur effect */
 }
 
 /* Initially hide the modal */
