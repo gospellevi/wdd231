@@ -1,0 +1,320 @@
+:root {
+    --primary-color: rgb(13, 95, 7);
+    --secondary-color: rgb(247, 247, 177);
+    --accent1-color: #82DBFF;
+    --accent2-color: #ffe224;
+
+    --heading-font: 'Arial', sans-serif;
+    --paragraph-font: 'Roboto+Serif', Serif;
+
+    --nav-background-color:  #82DBFF;
+    --nav-link-color: #333;
+    --nav-hover-link-color: #fff; 
+    --nav-hover-background-color: #24afffa1;
+}
+
+
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0;
+    border: 1px solid var(--secondary-color);
+    
+}
+
+.container {
+    background-color: rgb(247, 247, 177, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+p, li, a {
+    font-family: var(--paragraph-font);
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 22rem auto 48px;
+    background: var(--secondary-color);
+    color: #000;
+    align-items: center;
+}
+
+header img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+header .profile {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    align-items: center;
+}
+
+
+.title {
+    margin-left: -20px;
+    margin-top: -30px;
+    color: var(--primary-color);
+}
+
+.title h1 {
+    margin-bottom: 0px;
+    font-size: 3rem;
+}
+
+.title h4 {
+    margin-top: -10px;
+    font-size: 0.6rem;
+}
+
+nav ul {
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 20px;
+   list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 15px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    font-weight: bold;
+    background-color: var(--primary-color);
+}
+
+header img:nth-last-child(1) {
+    margin-left: -25px;
+}
+
+li.active a {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+li.active a:hover {
+    background-color: var(--primary-color)
+}
+
+/* -----------------hamburger menu------------------- */
+#hamburger {
+    display: none;
+}
+
+/* ----------------------------------------------------------- */
+
+main {
+    padding: 20px;
+}
+
+/* Grid Layout */
+/* CSS Grid for Sidebar Layout */
+.discover-page {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+}
+
+
+/* -----------------sidebar section-------------------- */
+
+.sidebar section {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Visitor Message */
+.sidebar .visitor-info {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--nav-link-color);
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    background-color: rgb(51, 51, 51, 0.2);
+    margin: -10px -10px 10px -10px;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.event, .attraction {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.event img, .attraction img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.event img:hover, .attraction img:hover {
+    transform: scale(2);
+}
+
+.sidebar p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.demographics p {
+    margin: 5px 0;
+}
+
+
+/*--------------- Calendar Example---------------- */
+.calendar {
+    text-align: center;
+    margin-top: 20px;
+    margin-top: 20px;
+    /* background-color: #fff; */
+    background-color: rgb(247, 247, 177, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.calendar h2 {
+    margin: 0;
+    padding: 10px 0;
+
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+.calendar-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#calendar-table thead tr {
+    background-color: var(--secondary-color);
+}
+
+#month-year {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar-table th, #calendar-table td {
+    padding: 5px;
+    width: 14.285%;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#calendar-table td {
+    height: 40px;
+}
+
+#prev-month, #next-month {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#prev-month:hover, #next-month:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* ---------------------------gallery images styling------------------------- */
+
+.gallery {
+    padding: 0;
+    margin: 0;
+   
+}
+
+.gallery-img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.08);
+}
+
+figcaption {
+    text-align: center;
+    /* margin-top: 5px; */
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+/* ----------------------------Footer styles--------------------- */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: var(--secondary-color);
+    color: #000;
+    text-align: left;
+    font-size: .8rem;
+    padding: 10px;
+    justify-items: center;
+}
+
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer div h4,
+footer div p {
+    margin-bottom: -10px;
+}
+
+footer div p:nth-last-of-type(1) {
+    margin-bottom: 10px;
+}
+
+footer .social-media img {
+    margin-top: 20px;
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.5);
+}
