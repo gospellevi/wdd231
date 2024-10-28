@@ -142,12 +142,16 @@ main {
 }
 
 /* Visitor Message */
-.sidebar .visitor-info {
+.visitor-info {
     font-size: 1.2em;
     font-weight: bold;
     color: #fff;
     background-color: var(--nav-link-color);
     text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .sidebar h2 {
@@ -260,7 +264,6 @@ main {
 .gallery {
     padding: 0;
     margin: 0;
-   
 }
 
 .gallery-img {

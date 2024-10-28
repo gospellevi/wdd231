@@ -71,6 +71,10 @@
         grid-template-columns: 1fr;
     }
 
+    .visitor-info {
+        margin: 0 30px;
+    }
+
     .sidebar section {
         grid-template-columns: 1fr;
         margin: 2rem ;
@@ -83,7 +87,7 @@
     .gallery-img:hover {
         transform: none; /* Disable hover effect on mobile */
     }
-    
+
 
     /* -------------------footer styling------------------ */
 
