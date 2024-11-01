@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDD 231 - Online Thrift Store - Gospel Levi</title>
+    <meta name="description" content="WDD231: The Product Page for my Online Thrift Store - Sucre's Savory & Styles - in Ikeja, Nigeria.">
+    <meta name="author" content="Gospel Levi">
+    <!-- Open Graph Meta Properties -->
+    <meta property="og:title" content="Sucre's Savory & Styles Home | Online Thrift Store">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gospellevi.github.io/wdd231/project/images/SSS&S-Logo.png"> <!-- Replace with the actual image URL -->
+    <meta property="og:url" content="https://gospellevi.github.io/wdd231/project/index.html"> <!-- Replace with your page URL -->
+    <meta property="og:description" content="Browse our selection of eco-friendly, affordable female thrift wear.">
+    <meta property="og:site_name" content="Sucre's Savory & Styles">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <!-- <link rel="stylesheet" href="styles/directory.css"> -->
+    <script src="scripts/fetch.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <!-- <a href="index.html"><img src="images/SS&S-Logo.png" alt="site logo" loading="lazy"></a> -->
+            <img src="images/SS&S-Logo.png" alt="site logo" loading="lazy">
+            <div class="title">
+                <!-- <a href="index.html"><h1>Sucre's Savory & Styles</h1></a> -->
+                <h1>Sucre's Savory & Styles</h1>
+                <h4>Exquisite Tastes and Trends</h4>
+            </div>
+        </div>
+
+        <!-- <button id="hamburger">&#9776;</button> -->
+        <nav id="navMenu">
+            <ul class="menulinks">
+                <li class="active"><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                <li><a href="products.html" rel="noopener noreferrer">Products</a></li>
+                <li><a href="checkout.html" target="_blank" rel="noopener noreferrer">Checkout</a></li>
+                <!-- <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                <li><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="login.html" target="_blank" rel="noopener noreferrer">Login</a></li> -->
+                <li><a href="cart.html" class="cart-icon" aria-label="Cart"><span id="cart-count">Cart: 0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <section id="products-section">
+                <h2>Our Collection</h2>
+                <div id="product-list"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <h4>Ikeja Chamber of Commerce</h4>
+                <p>6 Adeniji Street, Oregun</p>
+                <p>Ikeja, Nigeria 100212</p>
+                <p>info@ikejacoc.org</p>
+                <p>+234 803 123 4567</p>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com" loading="lazy"></a>
+                <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com" loading="lazy"></a>
+                <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com" loading="lazy"></a>
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Gospel Levi</p>
+                <p>© <span id="currentyear"></span> 💃 Sucre's Savory & Styles 💃</p>
+                <p id="lastmodified"></p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

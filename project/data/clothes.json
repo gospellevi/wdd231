@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "name": "Vintage Dress",
+        "image": "images/dress1.jpg",
+        "description": "A stylish vintage dress in mint condition.",
+        "size": "M",
+        "origin": "UK",
+        "color": "Blue",
+        "grade": "A"
+    },
+    {
+        "id": "2",
+        "name": "Floral Blouse",
+        "image": "images/blouse1.jpg",
+        "description": "Lightweight floral blouse, perfect for summer.",
+        "size": "S",
+        "origin": "China",
+        "color": "Red",
+        "grade": "A"
+    },
+    {
+        "id": "3",
+        "name": "Denim Jacket",
+        "image": "images/jacket1.jpg",
+        "description": "Classic denim jacket with a comfortable fit.",
+        "size": "L",
+        "origin": "USA",
+        "color": "Blue",
+        "grade": "B"
+    },
+    {
+        "id": "4",
+        "name": "Leather Skirt",
+        "image": "images/skirt1.jpg",
+        "description": "High-quality leather skirt for a chic look.",
+        "size": "M",
+        "origin": "Italy",
+        "color": "Black",
+        "grade": "A"
+    },
+    {
+        "id": "5",
+        "name": "Graphic Tee",
+        "image": "images/tee1.jpg",
+        "description": "Trendy graphic tee with vibrant colors.",
+        "size": "L",
+        "origin": "Japan",
+        "color": "White",
+        "grade": "B"
+    },
+    {
+        "id": "6",
+        "name": "Plaid Shirt",
+        "image": "images/shirt1.jpg",
+        "description": "Casual plaid shirt made from soft cotton.",
+        "size": "M",
+        "origin": "Canada",
+        "color": "Green",
+        "grade": "A"
+    },
+    {
+        "id": "7",
+        "name": "Cargo Pants",
+        "image": "images/pants1.jpg",
+        "description": "Functional cargo pants with multiple pockets.",
+        "size": "XL",
+        "origin": "Germany",
+        "color": "Beige",
+        "grade": "B"
+    },
+    {
+        "id": "8",
+        "name": "Silk Scarf",
+        "image": "images/scarf1.jpg",
+        "description": "Elegant silk scarf for a touch of luxury.",
+        "size": "One Size",
+        "origin": "France",
+        "color": "Pink",
+        "grade": "A"
+    },
+    {
+        "id": "9",
+        "name": "Striped Sweater",
+        "image": "images/sweater1.jpg",
+        "description": "Cozy striped sweater, ideal for colder days.",
+        "size": "M",
+        "origin": "Australia",
+        "color": "Gray",
+        "grade": "A"
+    },
+    {
+        "id": "10",
+        "name": "Boho Maxi Skirt",
+        "image": "images/skirt2.jpg",
+        "description": "Flowy boho maxi skirt with earthy tones.",
+        "size": "L",
+        "origin": "India",
+        "color": "Brown",
+        "grade": "B"
+    }
+]

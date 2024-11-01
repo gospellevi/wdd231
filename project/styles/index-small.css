@@ -1,0 +1,262 @@
+@media screen and (max-width: 600px)  and (min-width: 300px) {
+
+    .container {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    /* Header */
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: beige;
+    }
+
+    /* Profile Styling */
+    header .profile {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+    }
+
+    .profile h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1px;
+    }
+
+    .profile h4 {
+        font-size: 0.6rem;
+    }
+
+    .profile img {
+        width: 70px;
+    }
+
+    /* Navigation Menu */
+    #navMenu {
+        font-size: 1rem;
+        /* display: none; Hidden by default */
+        /* overflow: hidden; */
+        transition: height 0.5s ease-in-out;
+        /* margin-top: 50px; */
+    }
+
+    #navMenu.show {
+        /* display: block; Show when 'show' class is added */
+        height: 220px;
+        /* max-height: 2px; */
+    }
+
+    #navMenu ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #navMenu.show ul {
+        transform: translateY(0);
+    }
+
+    /* ----------------hamburger styling------------ */
+
+    #hamburger {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 2.5rem;
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+        border: none;
+    }
+
+    ul.menulinks li a {
+        display: block;
+        padding: .75rem 2vw;
+    }
+
+    /* -----------------Hero Section---------------- */
+    .hero {
+        margin-top: 5rem;
+    }
+
+    .hero-content {
+        top: 38%;
+        left: 5.5%;
+    }
+
+    .categories {
+       margin-top: -8rem;
+    }
+
+    /* ------------------Hero Section Styling--------------------- */
+    .hero {
+        height: 400px;
+        padding: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        /* object-fit: contain; */
+        /* margin-top: 2rem; */
+    }
+
+    .hero-content {
+        transform: translate(-1.5rem, 5.5rem);
+        padding: 0.5rem 0.25rem;
+        width: 85%;
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero .btn {
+        margin-bottom: 1rem;
+    }
+
+    /* Adjust member cards for small screens */
+    
+    /* Categories */
+    .category-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .newsletter label {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+    /* -------------------footer styling------------------ */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    footer .social-media {
+        /* justify-content:flex-end; */
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px)  and (min-width: 601px) {
+
+    .container {
+        max-width: 1200px
+    }
+
+    header {
+        display: grid;
+        grid-template-columns:  30rem auto; 
+        background-color: beige;
+    }
+
+    /* Profile Styling */
+
+    .profile h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1px;
+    }
+
+
+     /* Navigation Menu */
+
+
+    /* ----------------hamburger styling------------ */
+
+    #hamburger {
+        display: none;
+    }
+
+    /* -----------------Hero Section---------------- */
+    
+    .hero-content {
+        top: 36%;
+        left: 6%;
+    }
+
+    .categories {
+       margin-top: -8rem;
+    }
+
+    
+
+    /* ------------------Hero Section Styling--------------------- */
+    .hero {
+        height: 400px;
+        padding: 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        /* object-fit: contain; */
+        /* margin-top: 2rem; */
+    }
+
+    .hero-content {
+        transform: translate(-1.5rem, .5rem);
+        padding: 0.5rem 0.25rem;
+        width: 85%;
+        text-align: center;
+    }
+
+    /* Adjust member cards for small screens */
+    
+    /* Categories */
+    .category-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .newsletter label {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+    /* -------------------footer styling------------------ */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    footer .social-media {
+        /* justify-content:flex-end; */
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WDD 231 - Online Thrift Store - Gospel Levi</title>
+    <meta name="description" content="WDD231: The home page for my Online Thrift Store - Sucre's Savory & Styles - in Ikeja, Nigeria.">
+    <meta name="author" content="Gospel Levi">
+    <!-- Open Graph Meta Properties -->
+    <meta property="og:title" content="Sucre's Savory & Styles Home | Online Thrift Store">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gospellevi.github.io/wdd231/project/images/SSS&S-Logo.png"> <!-- Replace with the actual image URL -->
+    <meta property="og:url" content="https://gospellevi.github.io/wdd231/project/index.html"> <!-- Replace with your page URL -->
+    <meta property="og:description" content="Affordable, eco-friendly UK & China female thrift wear store.">
+    <meta name="keywords" content="thrift store, pre-loved clothing, eco-friendly fashion, thrift finds">
+    <meta property="og:site_name" content="Sucre's Savory & Styles">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <!-- <link rel="stylesheet" href="styles/directory.css"> -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="profile">
+                <!-- <a href="index.html"><img src="images/SS&S-Logo.png" alt="site logo" loading="lazy"></a> -->
+                <img src="images/SS&S-Logo.png" alt="site logo" loading="lazy">
+                <div class="title">
+                    <!-- <a href="index.html"><h1>Sucre's Savory & Styles</h1></a> -->
+                    <h1>Sucre's Savory & Styles</h1>
+                    <h4>Exquisite Tastes and Trends</h4>
+                </div>
+            </div>
+
+            <!-- <button id="hamburger">&#9776;</button> -->
+            <nav id="navMenu">
+                <ul class="menulinks">
+                    <li class="active"><a href="index.html" rel="noopener noreferrer">Home</a></li>
+                    <li><a href="products.html" rel="noopener noreferrer">Products</a></li>
+                    <li><a href="checkout.html" target="_blank" rel="noopener noreferrer">Checkout</a></li>
+                    <!-- <li><a href="about.html" target="_blank" rel="noopener noreferrer">About</a></li>
+                    <li><a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+                    <li><a href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    <li><a href="login.html" target="_blank" rel="noopener noreferrer">Login</a></li> -->
+                    <li><a href="cart.html" class="cart-icon" aria-label="Cart"><span id="cart-count">Cart: 0</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+                    <!-- Hero Section -->
+            <section class="hero">
+                <!-- <img src="images/clothes-rack.webp" alt="Hero Image" class="hero-image"> -->
+                <picture>
+                    <source srcset="images/clothes-rack.webp" media="(min-width: 1200px)">
+                    <source srcset="images/thrifts1.jpeg" media="(min-width: 500px)">
+                    <img src="images/female-all.jpeg" alt="Remote area of Nigeria"  aria-hidden="true" loading="lazy">    
+                </picture>
+
+                <div class="hero-content">
+                    <h2>Welcome to Sucre's Savory & Styles</h2>
+                    <p>Discover unique and affordable pre-loved items for your wardrobe and home.</p>
+                    <a href="products.html" class="btn">Shop Now</a>
+                </div>
+            </section>
+
+            <!-- Featured Categories -->
+            <section class="categories">
+                <h2>Featured Categories</h2>
+                <div class="category-cards">
+                    <div class="category-card" class="card1">
+                        <img src="images/women's-trendy2.png" alt="Women's Trendy">
+                        <h3>Women's Trendy</h3>
+                        <p>Explore our collection of pre-loved, clean, and trendy female fashion items.</p>
+                    </div>
+                    <div class="category-card" class="card2">
+                        <img src="images/female-clothes-sample.jpg" alt="Women's Casual">
+                        <h3>Women's Casual</h3>
+                        <p>Find unique female casual dresses.</p>
+                    </div>
+                    <div class="category-card" class="card3">
+                        <img src="images/mens-thrift-collection.jpg" alt="Men's">
+                        <h3>Men's Shirts and Caps</h3>
+                        <p>Discover vintage and modern men's shirts and caps for your everyday look.</p>
+                    </div>
+                    <div class="category-card" class="card4">
+                        <img src="images/female-accessories.jpg" alt="Accessories">
+                        <h3>Accessories</h3>
+                        <p>Browse our selection of pre-loved accessories.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Arrivals -->
+            <section class="new-arrivals">
+                <h2>New Arrivals</h2>
+                <div id="products-container" class="product-grid"></div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-preview">
+                <h2>About Us</h2>
+                <p>We believe in sustainable fashion. Our curated selection of pre-loved items lets you shop consciously without sacrificing style.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </section>
+
+            <!-- Customer Testimonials -->
+            <section class="testimonials">
+                <h2>What Our Customers Say</h2>
+                <div class="carousel">
+                    <div class="testimonial">"Great quality items and affordable prices!" - Jane D.<span class="customer-pic"><img src="images/Regina.webp" alt="Customer 1" loading="lazy" width="50"></span></div>
+                    <div class="testimonial">"Love this store! I found exactly what I needed." - Mark S.<span class="customer-pic"><img src="images/Regina.webp" alt="Customer 2" loading="lazy" width="50"></span></div>
+                </div>
+            </section>
+
+            <!-- Newsletter Subscription -->
+            <section class="newsletter">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to get updates on the latest arrivals and exclusive deals.</p>
+                <form method="get" action="thankyou.html" id="newsletter-form">
+                    <!-- Email Address -->
+                    <label for="email" class="required" title="Enter your email address">
+                        Email:
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@domain.com" title="Your Email Address">
+                    </label>
+
+                    <!-- Timestamp (Hidden) -->
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                    <!-- <input type="email" placeholder="Your email address" aria-label="Email address"> -->
+                    <button type="submit" class="btn">Subscribe Now</button>
+                </form>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div>
+                <h4>Sucre's Savory & Styles</h4>
+                <p>info@sucresavoryandstyles.org</p>
+                <p>+234 811 962 8825</p>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><img src="images/facebook-600.png" alt="Facebook icon by Icons8.com" loading="lazy"></a>
+                <a href="#" target="_blank"><img src="images/twitterx-600.png" alt="Twitter icon by Icons8.com" loading="lazy"></a>
+                <a href="#" target="_blank"><img src="images/linkedin-600.png" alt="LinkedIn icons by Icons8.com" loading="lazy"></a>
+            </div>
+            <div>
+                <p>WDD231 Class Project</p>
+                <p>Gospel Levi</p>
+                <p>© <span id="currentyear"></span> 💃 Sucre's Savory & Styles. All rights reserved. 💃</p>
+                <p id="lastmodified"></p>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
+
+
+
+
