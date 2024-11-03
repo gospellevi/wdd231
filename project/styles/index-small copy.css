@@ -135,14 +135,13 @@
 
 @media screen and (max-width: 1200px)  and (min-width: 601px) {
 
-    .container {
+    /* .container {
         max-width: 1200px
-    }
+    } */
 
     header {
         display: grid;
-        grid-template-columns:  30rem auto; 
-        background-color: beige;
+        grid-template-columns: 28rem auto 48px;
     }
 
     /* Profile Styling */
@@ -162,57 +161,47 @@
         display: none;
     }
 
-    /* -----------------Hero Section---------------- */
-    
-    .hero-content {
-        top: 36%;
-        left: 6%;
-    }
-
-    .categories {
-       margin-top: -8rem;
-    }
 
     
-
     /* ------------------Hero Section Styling--------------------- */
     .hero {
         height: 400px;
-        padding: 1rem;
-        margin-bottom: 10rem;
     }
 
     .hero img {
         width: 100%;
         height: 100%;
-        /* object-fit: cover; */
-        /* object-fit: contain; */
-        /* margin-top: 2rem; */
+        filter: blur(2px);
     }
 
     .hero-content {
-        transform: translate(-1.5rem, .5rem);
+        transform: translate(2rem, -27rem);
         padding: 0.5rem 0.25rem;
         width: 85%;
         text-align: center;
+        padding-bottom: 2rem;
     }
 
-    /* Adjust member cards for small screens */
+    section h3 {
+        text-align: center;
+        min-width: 15em;
+    }
+
+    /* Adjust category cards for small screens */
     
     /* Categories */
+    .categories h3 {
+        margin-bottom: 2em;
+     }
+
     .category-cards {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
-    .newsletter label {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-
 
     /* -------------------footer styling------------------ */
 
@@ -223,9 +212,12 @@
     }
 
     footer .social-media {
-
         justify-content: center;
         margin-top: 10px;
+    }
+
+    footer p {
+        /* font-size: .8rem; */
     }
 
 }

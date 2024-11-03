@@ -159,18 +159,6 @@ li.active a:hover {
     border: 2px solid var(--accent2-color);
 }
 
-/* .hero-content {
-    position: absolute;
-    top: 25%;
-    margin: auto 2rem;
-    background-color: rgb(45, 106, 79, 0.9);
-    padding: 2rem 8rem;
-    text-align: center;
-    transform: translate(50%, -35%);
-    border: 2px solid #2d6a4f;
-
-} */
-
 .hero h2 {
     font-size: 2rem;
 }
