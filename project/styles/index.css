@@ -278,7 +278,7 @@ section h3 {
     grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     margin: auto .5rem;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .testimonial {
