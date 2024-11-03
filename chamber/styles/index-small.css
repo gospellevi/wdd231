@@ -45,6 +45,7 @@
         width: 35%;
         height: auto;
     }
+
     /* ----------------hamburger styling------------ */
 
     #hamburger {
@@ -67,10 +68,10 @@
 
 
     /* Directory Controls */
-    .directory-controls {
+    /* .directory-controls {
         text-align: center;
         margin-bottom: 20px;
-    }
+    } */
 
     #toggleViewBtn {
         display: none;
