@@ -1,6 +1,21 @@
 // main.js
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Login and Signup Buttons
+    const loginBtn = document.getElementById('loginBtn');
+    const signupBtn = document.getElementById('signupBtn');
+
+    if (loginBtn) {
+        loginBtn.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    }
+    if (signupBtn) {
+        signupBtn.addEventListener('click', () => {
+            window.location.href = 'signup.html';
+        });
+    }
+
     // Set Footer Details
     // Current Year and Last Modified
     const currentyear = document.querySelector("#currentyear");
