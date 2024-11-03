@@ -150,7 +150,6 @@ li.active a:hover {
 
 .hero-content {
     position: absolute;
-    /* top: 25%; */
     margin: auto 2rem;
     background-color: rgb(45, 106, 79, 0.9);
     color: var(--primary-color);
@@ -159,6 +158,18 @@ li.active a:hover {
     transform: translate(50%, -250%);
     border: 2px solid var(--accent2-color);
 }
+
+/* .hero-content {
+    position: absolute;
+    top: 25%;
+    margin: auto 2rem;
+    background-color: rgb(45, 106, 79, 0.9);
+    padding: 2rem 8rem;
+    text-align: center;
+    transform: translate(50%, -35%);
+    border: 2px solid #2d6a4f;
+
+} */
 
 .hero h2 {
     font-size: 2rem;
@@ -180,17 +191,18 @@ li.active a:hover {
 }
 
 .hero .btn:hover {
-    background-color: #40916c;
+    background-color: var(--nav-hover-link-color);
+    color: #000;
+    font-weight: bold;
 }
 
-section h2 {
+section h3 {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     padding: 1rem;
     margin: 1rem auto;
     border-radius: 1rem;
     width: 20%;
-    /* text-align: center; */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -200,6 +212,9 @@ section h2 {
     text-align: center;
 }
 
+.categories h4 {
+    font-size: 1.1rem;
+}
 
 .category-cards {
     display: grid;
@@ -258,7 +273,7 @@ section h2 {
 }
 
 .about-preview a:hover {
-    background-color: var(--nav-hover-background-color);
+    background-color: var(--nav-hover-link-color);
     color: var(--nav-link-color);
     font-weight: bold;
 }
@@ -339,7 +354,7 @@ footer {
     background: var(--secondary-color);
     color: var(--primary-color);
     text-align: left;
-    /* font-size: .8rem; */
+    font-size: .8rem;
     /* font-family: var(--heading-font); */
     padding: 10px;
     justify-items: center;
@@ -360,4 +375,24 @@ footer .social-media img {
 
 footer .social-media img:hover {
     transform: scale(1.5);
+}
+
+footer div:first-of-type a {
+    color: var(--nav-hover-link-color);
+    text-decoration: none;
+}
+
+footer strong {
+    font-weight: bold;
+    color: red;
+    background-color: #fff;
+    padding: 3px;
+    /* border-radius: 5px; */
+}
+
+footer strong:hover {
+    color: #fff;
+    background-color: red;
+    padding: 3px;
+    /* border-radius: 5px; */
 }
